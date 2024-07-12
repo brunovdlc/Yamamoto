@@ -1,0 +1,44 @@
+.toggle-play,
+.toggle-play i {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid var(--border); /* Alterado para border-left */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(180deg);
+}
+
+.toggle-play {
+  position: fixed;
+  bottom: 50px; /* Mantido o bottom para manter a distância do rodapé */
+  left: 50px; /* Alterado para left para posicionar no canto esquerdo */
+  z-index: 12000;
+  border: none;
+  outline: none;
+  background: none;
+  color: var(--light);
+  box-shadow: none;
+  transition: .2s;
+}
+
+.toggle-play:hover {
+  color: var(--shadow);
+  border-left: 30px solid var(--shadow); /* Alterado para border-left */
+  cursor: pointer;
+}
+
+.toggle-play i {
+  font-size: 24px;
+  color: #fff;
+}
+
+.fa {
+  font-size: 24px;
+}
+
+#sound:before {
+  content: "";
+}
